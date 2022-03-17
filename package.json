@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lchrios/PingMe#readme",
   "dependencies": {
+    "random": "^3.0.6",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1"
   }
