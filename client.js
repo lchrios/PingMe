@@ -6,6 +6,16 @@ const
 
 //ioClient.emit("username", "Chris");
 
+class Client {
+
+    constructor(url) {
+        this.ioClient = io.connect("http://localhost:8000");
+        this.ioClient.on("message", (data) => {
+            console.info(data)
+        });
+    }
+}
+
 // * Global server variable
 var connUsers = {};
 
